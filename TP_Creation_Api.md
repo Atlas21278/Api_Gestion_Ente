@@ -39,3 +39,24 @@ remarque text
 | `/entretiens/:id`               | GET          | id                                              | Récupère les détails d'un entretien spécifique.         |
 | `/entretiens/:id`               | PUT          | id, Corps: { dateEntretien, typeEntretien, ... }| Met à jour les détails d'un entretien spécifique.       |
 | `/entretiens/:id`               | DELETE       | id                                              | Supprime un entretien spécifique.                       |
+
+
+
+
+
+
+
+
+| Endpoint                        | Erreur                                           | Description                                                  |
+|---------------------------------|--------------------------------------------------|--------------------------------------------------------------|
+| `POST /avions`                  | AUCUN AVION AJOUTE                               | Peut-être manque-t-il des données. L’avion n’a pas été ajouté.|
+| `GET /avions`                   | AUCUN AVION TROUVE                               | Aucun avion n’a été trouvé.                                  |
+| `GET /avions/:immatriculation`  | AUCUN AVION TROUVE - AVEC L'IMMATRICULATION :    | Impossible de récupérer l’avion associé à l’immatriculation passée en paramètres. |
+| `GET /avions`                   | AUCUN AVION TROUVE - AVEC CES PARAMETRES :       | Impossible de récupérer l’avion associé aux paramètres envoyés. |
+| `PUT /avions/:immatriculation`  | AUCUN AVION MODIFIE                              | Peut-être que l'immatriculation n'existe pas en BDD. L’avion n’a pas été mis à jour. |
+| `GET /mecaniciens`              | AUCUN MECANICIEN TROUVE                          | Aucun mécanicien n’a été trouvé.                             |
+| `GET /mecaniciens/:id`          | AUCUN MECANICIEN TROUVE - AVEC L'ID :            | Impossible de récupérer le mécanicien associé à l’ID passé en paramètres. |
+| `PUT /mecaniciens/:id`          | AUCUN MECANICIEN MODIFIE                         | Peut-être que l'ID n'existe pas en BDD. Le mécanicien n’a pas été mis à jour. |
+| `GET /entretiens`               | AUCUN ENTRETIEN TROUVE                           | Aucun entretien n’a été trouvé.                              |
+| `GET /entretiens/:id`           | AUCUN ENTRETIEN TROUVE - AVEC L'ID :             | Impossible de récupérer l’entretien associé à l’ID passé en paramètres. |
+| `PUT /entretiens/:id`           | AUCUN ENTRETIEN MODIFIE                          | Peut-être que l'ID n'existe pas en BDD. L’entretien n’a pas été mis à jour. |
