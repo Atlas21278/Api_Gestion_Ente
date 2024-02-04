@@ -1,25 +1,7 @@
 TP - Création de son API
 
-Uml
-Avion : - 
-immatriculation varchar(10) PK
-marque varchar(100)
-modele varchar(100)
-heuresVol int
 
-Mécaniciens : 
-id int PK 
-nom varchar(100)
-prenom varchar(100)
-heuresVol int 
-
-Entretiens : 
-id int PK
-dateEntretien 
-typeEntretien varchar(100)
-immatriculationAvion varchar(10) FK 
-idMecanicien int FK 
-remarque text
+![uml_tp-entretien](https://github.com/Atlas21278/Api_Gestion_Entretiens/assets/113702788/2b190a8e-e0e5-4d0a-8733-2385bb4274a6)
 
 
 | Endpoint                      | Paramètres                                                                                   | Description                                                             |
