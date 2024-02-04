@@ -49,3 +49,20 @@ TP - Création de son API
 | `PUT /entretiens/:id`            | **`AUCUN ENTRETIEN MODIFIE`**                                      | Peut-être que l'ID n'existe pas. L’entretien n’a pas été mis à jour.    |
 | `DELETE /entretiens/:id`         | **`AUCUN ENTRETIEN SUPPRIME`**                                     | L’entretien correspondant à l’ID spécifié n’a pas été supprimé.         |
 
+
+
+
+
+### Description Simplifiée du Processus
+
+- **Requêtes des Clients :** Les clients (développeurs et utilisateurs finaux) envoient des requêtes HTTP à l'API pour interagir avec le système (création, lecture, mise à jour, suppression d'informations).
+
+- **Traitement par l'API :** L'API reçoit ces requêtes, les transforme en instructions SQL adaptées, et les transmet à la base de données MariaDB pour exécution.
+
+- **Interaction avec la BDD :** La base de données exécute les instructions SQL reçues, effectue les opérations demandées, et renvoie les résultats à l'API.
+
+- **Réponses de l'API :** L'API traite les informations reçues de la BDD et envoie les réponses appropriées aux clients, incluant les données requises, les confirmations d'actions réalisées, ou des messages d'erreur.
+
+
+
+
