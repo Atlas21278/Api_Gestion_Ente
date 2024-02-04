@@ -1,7 +1,19 @@
-TP - Création de son API
+# TP - Création de son API
 
+## Objectif
+L'objectif de ce TP est de débuter la création d'une API en suivant une architecture modèle-manager-controller et d'utiliser un package externe.
 
-![uml_tp-entretien](https://github.com/Atlas21278/Api_Gestion_Entretiens/assets/113702788/2b190a8e-e0e5-4d0a-8733-2385bb4274a6)
+## Contexte
+Dans le cadre de la gestion du système d'information de la base aérienne d'Istres, le but est de développer une application pour gérer les aéronefs. Cette API, développée en NodeJS et TypeScript, interagira avec une base de données MariaDB.
+
+## Travail à réaliser
+
+### Modèle conceptuel
+Le modèle conceptuel est représenté par l'UML suivant :
+![uml_tp-entretien](https://github.com/Atlas21278/Api_Gestion_Entretiens/assets/113702788/28bf8c10-fc58-49a8-95b5-0cb766c6c24b)
+
+### Liste des endpoints
+Les endpoints suivants sont définis pour interagir avec l'API :
 
 
 | Endpoint                      | Paramètres                                                                                   | Description                                                             |
@@ -24,11 +36,8 @@ TP - Création de son API
 | `DELETE /entretiens/:id`      | `id` - int dans URL                                                                          | Supprime l'entretien correspondant à l'id et retourne son id.           |
 
 
-
-
-
-
-
+### Liste des erreurs possibles
+Voici les erreurs que vous pouvez rencontrer lors de l'utilisation de l'API :
 
 
 | Endpoint                         | Erreur                                                             | Description                                                             |
@@ -49,7 +58,9 @@ TP - Création de son API
 | `PUT /entretiens/:id`            | **`AUCUN ENTRETIEN MODIFIE`**                                      | Peut-être que l'ID n'existe pas. L’entretien n’a pas été mis à jour.    |
 | `DELETE /entretiens/:id`         | **`AUCUN ENTRETIEN SUPPRIME`**                                     | L’entretien correspondant à l’ID spécifié n’a pas été supprimé.         |
 
-
+### Flux de Données Simplifié
+Le schéma suivant illustre le flux de données entre les clients, l'API, et la base de données :
+![flux_de_donées_Entretien](https://github.com/Atlas21278/Api_Gestion_Entretiens/assets/113702788/5e046375-93f2-45f1-ae00-62c6d872dbcf)
 
 
 
